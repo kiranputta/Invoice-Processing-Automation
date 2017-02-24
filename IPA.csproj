@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IDP\Debugold\iData_DemoProduct.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F19BAC65-13DE-4A60-AF36-0F18C3C74FA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>IPA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>IPA</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.86.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>packages\ClosedXML.0.86.0\lib\net40\ClosedXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="MySql.Data">
+      <HintPath>lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="NHunspell">
+      <HintPath>lib\NHunspell.dll</HintPath>
+    </Reference>
+    <Reference Include="MapSpellCheck">
+      <HintPath>lib\MapSpellCheck.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>lib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="TestInvLI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Service\LI\TestInvLI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ApplicationExesCalling.cs" />
+    <Compile Include="Classes\EnumImageFileTypes.cs" />
+    <Compile Include="Classes\FileEvents.cs" />
+    <Compile Include="Classes\UserRect_Template.cs" />
+    <Compile Include="Classes\LicenseOperation.cs" />
+    <Compile Include="Classes\Cls_InputBox.cs" />
+    <Compile Include="Classes\CBIR.cs" />
+    <Compile Include="Classes\FileSortOrder.cs" />
+    <Compile Include="Classes\ConnectionTest.cs" />
+    <Compile Include="Classes\Cls_ErrorLog.cs" />
+    <Compile Include="Classes\GeneralOperation.cs" />
+    <Compile Include="Classes\Preprocescs.cs" />
+    <Compile Include="Classes\AutoCompleteTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\PublicVariables.cs" />
+    <Compile Include="Classes\MaplesImaging_FileWindowsOrder.cs" />
+    <Compile Include="Classes\FileFolderDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cls_Crypto.cs" />
+    <Compile Include="Cls_FilePath.cs" />
+    <Compile Include="Cls_UserRect_Template.cs" />
+    <Compile Include="FineTuning\FieldBR.cs" />
+    <Compile Include="ProjRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOperations\Cls_ErrorLog.cs" />
+    <Compile Include="SearchOperations\FieldSearchLogic.cs" />
+    <Compile Include="SearchOperations\PageRangeSearch.cs" />
+    <Compile Include="SearchOperations\SearchEntities.cs" />
+    <Compile Include="SearchOperations\Validation.cs" />
+    <Compile Include="UI\BatchList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BatchList.Designer.cs">
+      <DependentUpon>BatchList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FieldSeacrch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FieldSeacrch.Designer.cs">
+      <DependentUpon>FieldSeacrch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ProductDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Sample1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\S2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Export_Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\QA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CreateNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Cls_DB_Con.cs" />
+    <Compile Include="UI\Rule_Engine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProcessFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="UI\Batch_Process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="mshtml\IHTMLDocument2.cs" />
+    <Compile Include="mshtml\IHTMLSelectionObject.cs" />
+    <Compile Include="mshtml\IHTMLTxtRange.cs" />
+    <Compile Include="mshtml\IHTMLDocument.cs" />
+    <Compile Include="SendKeys\NativeWin32.cs" />
+    <Compile Include="Classes\ImageFileType.cs" />
+    <Compile Include="Classes\InputBoxResult.cs" />
+    <Compile Include="UI\newCor.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Classes\AutoCompleteTextBox.resx" />
+    <EmbeddedResource Include="IPA\OneTimeInstallation.resx" />
+    <EmbeddedResource Include="IPA\ProductDashboard.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPA\Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPA\UI\Batch_Process.resx" />
+    <EmbeddedResource Include="IPA\UI\CreateNew.resx" />
+    <EmbeddedResource Include="IPA\UI\Dashboard.resx" />
+    <EmbeddedResource Include="IPA\UI\Export_Result.resx" />
+    <EmbeddedResource Include="IPA\UI\Form_Main.resx" />
+    <EmbeddedResource Include="IPA\UI\HomePage.resx" />
+    <EmbeddedResource Include="IPA\UI\Preferences.resx" />
+    <EmbeddedResource Include="IPA\UI\ProcessFlow.resx" />
+    <EmbeddedResource Include="IPA\UI\QA.resx" />
+    <EmbeddedResource Include="IPA\UI\QA_AR.resx" />
+    <EmbeddedResource Include="IPA\UI\Rule_Engine.resx" />
+    <EmbeddedResource Include="IPA\UI\S2.resx" />
+    <EmbeddedResource Include="IPA\UI\Sample1.resx" />
+    <EmbeddedResource Include="IPA\UI\Settings.resx" />
+    <EmbeddedResource Include="ProjRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProjRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BatchList.resx">
+      <DependentUpon>BatchList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Batch_Process.resx">
+      <DependentUpon>Batch_Process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Export_Result.resx">
+      <DependentUpon>Export_Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FieldSeacrch.resx">
+      <DependentUpon>FieldSeacrch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Preferences.resx">
+      <DependentUpon>Preferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProcessFlow.resx">
+      <DependentUpon>ProcessFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProductDashboard.resx">
+      <DependentUpon>ProductDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\QA.resx">
+      <DependentUpon>QA.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Invoice-processing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
