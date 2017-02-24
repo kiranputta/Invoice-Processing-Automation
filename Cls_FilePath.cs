@@ -12,6 +12,6 @@ namespace IPA
         public static string file_crop = Application.StartupPath + "\\crop\\crop.tif";
 
     }
-}
+}  
 
 //
